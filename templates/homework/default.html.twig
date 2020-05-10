@@ -1,0 +1,28 @@
+{% if homework %}
+    {% if homework.status == 'yes' %}
+        <button class="set-homework col-12 mt-3 mb-4 text-center btn btn-danger" data-url="{{ path('_homework_update', {'status': 'completed'}) }}">
+            {{ 'homework.finish'|trans }}
+        </button>
+    {% elseif homework.status == 'completed' %}
+        <div class="col-12">
+            <h4 class="text-center">{{ 'homework.finished'|trans }}</h4>
+            <div class="text-success text-center">
+                <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+        </div>
+    {% elseif homework.status == 'no' %}
+        <div class="col-12 text-center">
+            <h4>{{ 'no'|trans }}</h4>
+            <div class="text-success">
+                <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+        </div>
+    {% endif %}
+{% else %}
+    <button class="set-homework col-12 mt-1 mb-1 text-center btn btn-info" data-url="{{ path('_homework_update', {'status': 'yes'}) }}">
+        {{ 'yes'|trans }}
+    </button>
+    <button class="set-homework col-12 text-center btn btn-dark" data-url="{{ path('_homework_update', {'status': 'no'}) }}">
+        {{ 'no'|trans }}
+    </button>
+{% endif %}

@@ -1,0 +1,26 @@
+<div class="row pt-3">
+    {% for i in 0..6 %}
+        {% if i == 0 %}
+            <div class="col-lg-1 d-none d-lg-block"></div>
+        {% elseif i == 6 %}
+            <div class="col-lg-1 text-center text-primary d-none d-lg-block">
+                <span id="week-assigned-{{ meal.id }}" style="display: none;">
+                    <i class="fas fa-check-circle text-success"></i>
+                </span>
+                {% if meal.week == week %}
+                    <select class="assign-week" name="select-week" disabled="disabled">
+                        <option value="{{ meal.week }}" selected="selected">{{ meal.week }}</option>
+                    </select>
+                {% else %}
+                    <select class="assign-week" name="select-week" data-url="{{ path('_meal_update_week', {'id': meal.id}) }}">
+                        <option value="{{ meal.week }}" selected="selected">{{ meal.week }}</option>
+                        <option value="{{ week + 1 }}">{{ week + 1 }}</option>
+                        <option value="{{ week + 2 }}">{{ week + 2 }}</option>
+                    </select>
+                {% endif %}
+            </div>
+        {% else %}
+            {% include '/meal/current-meal.html.twig' %}
+        {% endif %}
+    {% endfor %}
+</div>

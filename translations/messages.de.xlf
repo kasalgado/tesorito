@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="es" trgLang="de">
+  <file id="messages.de">
+    <unit id="HMh8ICs" name="appointment.no_data">
+      <notes>
+        <note category="file-source" priority="1">templates/appointment/default.html.twig:22</note>
+      </notes>
+      <segment>
+        <source>appointment.no_data</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="EVB6Di9" name="new">
+      <notes>
+        <note category="file-source" priority="1">templates/appointment/default.html.twig:25</note>
+        <note category="file-source" priority="1">templates/task/default.html.twig:41</note>
+        <note category="file-source" priority="1">templates/buy/default.html.twig:36</note>
+      </notes>
+      <segment>
+        <source>new</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="xsquTnr" name="appointment.title">
+      <notes>
+        <note category="file-source" priority="1">templates/appointment/create.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>appointment.title</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="eFAfIuP" name="appointment.new">
+      <notes>
+        <note category="file-source" priority="1">templates/appointment/create.html.twig:5</note>
+      </notes>
+      <segment>
+        <source>appointment.new</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="tH_QX9B" name="task.next">
+      <notes>
+        <note category="file-source" priority="1">templates/appointment/create.html.twig:13</note>
+        <note category="file-source" priority="1">templates/task/create.html.twig:13</note>
+      </notes>
+      <segment>
+        <source>task.next</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="fp5aww8" name="add">
+      <notes>
+        <note category="file-source" priority="1">templates/appointment/create.html.twig:19</note>
+        <note category="file-source" priority="1">templates/task/create.html.twig:19</note>
+        <note category="file-source" priority="1">templates/meal/create.html.twig:18</note>
+        <note category="file-source" priority="1">templates/buy/create.html.twig:13</note>
+        <note category="file-source" priority="1">templates/goal/create.html.twig:13</note>
+      </notes>
+      <segment>
+        <source>add</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="I3TZF5S" name="cancel">
+      <notes>
+        <note category="file-source" priority="1">templates/appointment/create.html.twig:20</note>
+        <note category="file-source" priority="1">templates/task/create.html.twig:21</note>
+        <note category="file-source" priority="1">templates/task/create.html.twig:23</note>
+        <note category="file-source" priority="1">templates/task/create.html.twig:25</note>
+        <note category="file-source" priority="1">templates/meal/create.html.twig:19</note>
+        <note category="file-source" priority="1">templates/buy/create.html.twig:14</note>
+        <note category="file-source" priority="1">templates/goal/create.html.twig:14</note>
+      </notes>
+      <segment>
+        <source>cancel</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="pZ4Gban" name="main.cookies">
+      <notes>
+        <note category="file-source" priority="1">templates/main.html.twig:19</note>
+      </notes>
+      <segment>
+        <source>main.cookies</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="RRAdhdy" name="main.wellcome">
+      <notes>
+        <note category="file-source" priority="1">templates/main.html.twig:5</note>
+      </notes>
+      <segment>
+        <source>main.wellcome</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="SZIzqlL" name="header.start">
+      <notes>
+        <note category="file-source" priority="1">templates/header.html.twig:13</note>
+        <note category="file-source" priority="1">templates/header.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>header.start</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="slmB0Cn" name="header.manage">
+      <notes>
+        <note category="file-source" priority="1">templates/header.html.twig:18</note>
+      </notes>
+      <segment>
+        <source>header.manage</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="ntirmyc" name="header.monitor">
+      <notes>
+        <note category="file-source" priority="1">templates/header.html.twig:22</note>
+      </notes>
+      <segment>
+        <source>header.monitor</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="ZzMEVm6" name="header.logout">
+      <notes>
+        <note category="file-source" priority="1">templates/header.html.twig:27</note>
+      </notes>
+      <segment>
+        <source>header.logout</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="uR6pE.2" name="header.login">
+      <notes>
+        <note category="file-source" priority="1">templates/header.html.twig:36</note>
+      </notes>
+      <segment>
+        <source>header.login</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="JgVD9qf" name="header.register">
+      <notes>
+        <note category="file-source" priority="1">templates/header.html.twig:39</note>
+      </notes>
+      <segment>
+        <source>header.register</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="IENvMfx" name="header.contact">
+      <notes>
+        <note category="file-source" priority="1">templates/header.html.twig:42</note>
+      </notes>
+      <segment>
+        <source>header.contact</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="xjTFZFz" name="homework.finish">
+      <notes>
+        <note category="file-source" priority="1">templates/homework/default.html.twig:3</note>
+      </notes>
+      <segment>
+        <source>homework.finish</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="415DTPN" name="homework.finished">
+      <notes>
+        <note category="file-source" priority="1">templates/homework/default.html.twig:6</note>
+      </notes>
+      <segment>
+        <source>homework.finished</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="k5Apjz_" name="no">
+      <notes>
+        <note category="file-source" priority="1">templates/homework/default.html.twig:10</note>
+        <note category="file-source" priority="1">templates/homework/default.html.twig:18</note>
+      </notes>
+      <segment>
+        <source>no</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="inmIkP6" name="yes">
+      <notes>
+        <note category="file-source" priority="1">templates/homework/default.html.twig:17</note>
+      </notes>
+      <segment>
+        <source>yes</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="c9wQZP8" name="task.no_data">
+      <notes>
+        <note category="file-source" priority="1">templates/task/default.html.twig:37</note>
+      </notes>
+      <segment>
+        <source>task.no_data</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="RVEwrKZ" name="task.title">
+      <notes>
+        <note category="file-source" priority="1">templates/task/create.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>task.title</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="cp0NIgi" name="task.new">
+      <notes>
+        <note category="file-source" priority="1">templates/task/create.html.twig:5</note>
+      </notes>
+      <segment>
+        <source>task.new</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="Yq4b7oW" name="meal.select_dish">
+      <notes>
+        <note category="file-source" priority="1">templates/meal/days.html.twig:6</note>
+      </notes>
+      <segment>
+        <source>meal.select_dish</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="dEh_2C9" name="meal.no_data">
+      <notes>
+        <note category="file-source" priority="1">templates/meal/default.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>meal.no_data</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="CYd6SeE" name="meal.title">
+      <notes>
+        <note category="file-source" priority="1">templates/meal/create.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>meal.title</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="FH1E42k" name="meal.new">
+      <notes>
+        <note category="file-source" priority="1">templates/meal/create.html.twig:5</note>
+      </notes>
+      <segment>
+        <source>meal.new</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="wJ9N1wH" name="dish.new">
+      <notes>
+        <note category="file-source" priority="1">templates/meal/create.html.twig:20</note>
+      </notes>
+      <segment>
+        <source>dish.new</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="Z9FoPFA" name="weather.title">
+      <notes>
+        <note category="file-source" priority="1">templates/weather/default.html.twig:3</note>
+        <note category="file-source" priority="1">templates/weather/default.html.twig:3</note>
+      </notes>
+      <segment>
+        <source>weather.title</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="lg9BDVx" name="footer.start">
+      <notes>
+        <note category="file-source" priority="1">templates/footer.html.twig:4</note>
+      </notes>
+      <segment>
+        <source>footer.start</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="Errnd13" name="footer.login">
+      <notes>
+        <note category="file-source" priority="1">templates/footer.html.twig:5</note>
+      </notes>
+      <segment>
+        <source>footer.login</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="XVMxndn" name="footer.register">
+      <notes>
+        <note category="file-source" priority="1">templates/footer.html.twig:6</note>
+      </notes>
+      <segment>
+        <source>footer.register</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="pNm_zg0" name="footer.footprint">
+      <notes>
+        <note category="file-source" priority="1">templates/footer.html.twig:7</note>
+      </notes>
+      <segment>
+        <source>footer.footprint</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="m6d6qSk" name="footer.privacy">
+      <notes>
+        <note category="file-source" priority="1">templates/footer.html.twig:8</note>
+      </notes>
+      <segment>
+        <source>footer.privacy</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="E461khZ" name="footer.policy">
+      <notes>
+        <note category="file-source" priority="1">templates/footer.html.twig:9</note>
+      </notes>
+      <segment>
+        <source>footer.policy</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="GceQhC6" name="footer.copyright">
+      <notes>
+        <note category="file-source" priority="1">templates/footer.html.twig:12</note>
+      </notes>
+      <segment>
+        <source>footer.copyright</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="wF.IliY" name="buy.no_data">
+      <notes>
+        <note category="file-source" priority="1">templates/buy/default.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>buy.no_data</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="FIIfjs0" name="buy.title">
+      <notes>
+        <note category="file-source" priority="1">templates/buy/create.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>buy.title</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="swxp_VA" name="buy.new">
+      <notes>
+        <note category="file-source" priority="1">templates/buy/create.html.twig:5</note>
+      </notes>
+      <segment>
+        <source>buy.new</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="Lv8A3vR" name="goal.no_data">
+      <notes>
+        <note category="file-source" priority="1">templates/goal/default.html.twig:9</note>
+      </notes>
+      <segment>
+        <source>goal.no_data</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="QBxc1Ms" name="goal.title">
+      <notes>
+        <note category="file-source" priority="1">templates/goal/create.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>goal.title</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="YiIPkf2" name="goal.new">
+      <notes>
+        <note category="file-source" priority="1">templates/goal/create.html.twig:5</note>
+      </notes>
+      <segment>
+        <source>goal.new</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="DodjLNR" name="date">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/TaskType.php:21</note>
+      </notes>
+      <segment>
+        <source>date</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="tqxE4.Q" name="sunday">
+      <notes>
+        <note category="file-source" priority="1">src/Controller/MasterController.php:206</note>
+      </notes>
+      <segment>
+        <source>sunday</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="1hj7FXp" name="monday">
+      <notes>
+        <note category="file-source" priority="1">src/Controller/MasterController.php:207</note>
+      </notes>
+      <segment>
+        <source>monday</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="140aPzv" name="tuesday">
+      <notes>
+        <note category="file-source" priority="1">src/Controller/MasterController.php:208</note>
+      </notes>
+      <segment>
+        <source>tuesday</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="6GQhy4y" name="wednesday">
+      <notes>
+        <note category="file-source" priority="1">src/Controller/MasterController.php:209</note>
+      </notes>
+      <segment>
+        <source>wednesday</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="Fcv6ssy" name="thursday">
+      <notes>
+        <note category="file-source" priority="1">src/Controller/MasterController.php:210</note>
+      </notes>
+      <segment>
+        <source>thursday</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="Gnlmjqx" name="friday">
+      <notes>
+        <note category="file-source" priority="1">src/Controller/MasterController.php:211</note>
+      </notes>
+      <segment>
+        <source>friday</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="MvVWxyS" name="saturday">
+      <notes>
+        <note category="file-source" priority="1">src/Controller/MasterController.php:212</note>
+      </notes>
+      <segment>
+        <source>saturday</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="c2AAMdu" name="daily.total">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Controller/DefaultController.php:66</note>
+        <note category="file-source" priority="1">src/MonitorBundle/Controller/DefaultController.php:45</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>daily.total</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="ZVdsfOu" name="daily.points">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Controller/DefaultController.php:67</note>
+        <note category="file-source" priority="1">src/MonitorBundle/Controller/DefaultController.php:46</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>daily.points</source>
+        <target></target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

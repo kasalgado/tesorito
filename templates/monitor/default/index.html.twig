@@ -1,0 +1,87 @@
+{% extends '/monitor/base.html.twig' %}
+{% block title %}{{ 'title'|trans({}, 'monitor') }}{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid" style="position: relative;">
+        <div class="row toggle-nav">
+            <i class="fas fa-caret-down fa-3x"></i>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 text-dark" style="background-color: #d9edf7">
+                <div id="widget-daily">
+                    {% include '/daily/default.html.twig' %}
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 p-3" style="background-color: #f7ecb5">
+                <h4 class="text-center text-dark"><i class="fas fa-tasks"></i> {{ 'tasks'|trans({}, 'monitor') }}</h4>
+                <div id="widget-task" data-url="{{ path('_task_list') }}">
+                    {% include '/task/default.html.twig' %}
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 text-dark pt-5" style="background-color: rgb(208, 235, 235)">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-5 mt-1" style="color: #369;">
+                            <i class="fas fa-hotel fa-5x"></i>
+                        </div>
+                        <div id="widget-homework" class="col-7" data-url="{{ path('_homework_list') }}">
+                            {% include '/homework/default.html.twig' %}
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <h4 class="text-center text-dark"><i class="fas fa-edit"></i> {{ 'homework'|trans({}, 'monitor') }}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-sm-6 text-dark p-3" style="background-color: rgb(237, 240, 218)">
+                <div class="text-dark btn-show-field">
+                    <i class="fas fa-pen-square fa-1x"></i> {{ 'chat'|trans({}, 'monitor') }}
+                </div>
+                <div class="box-message">
+                    <input id="chat-message" data-url="{{ path('_chat_message_send') }}" type="text" name="message" value="" />
+                </div>
+                <div id="widget-chat" data-url="{{ path('_chat_message_append') }}">
+                    {% for message in messages|reverse %}
+                        <div class="small text-secondary">{{ message.user.username }} : {{ message.dateTime|date('d.m.Y - H:i') }} </div>
+                        <div class="mb-2">{{ message.chatText }} </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 text-dark p-3 bg-light">
+                <h4 class="text-center text-dark"><i class="fas fa-calendar"></i> {{ 'appointments'|trans({}, 'monitor') }}</h4>
+                <div id="widget-appointment" data-url="{{ path('_appointment_list') }}">
+                    {% include '/appointment/default.html.twig' %}
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 text-dark p-3" style="background-color: #b3ecff">
+                <h4 class="text-center text-dark"><i class="fas fa-shopping-cart"></i> {{ 'buy'|trans({}, 'monitor') }}</h4>
+                <div id="widget-buy" data-url="{{ path('_buy_list') }}">
+                    {% include '/buy/default.html.twig' %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" style="background-color: #f9ecec">
+                <h4 class="text-center text-dark"><i class="fas fa-home"></i> {{ 'food'|trans({}, 'admin') }}</h4>
+                <div id="widget-meal">{% include '/meal/default.html.twig' %}</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('chart') }}
+{% endblock %}

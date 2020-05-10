@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="es" trgLang="es">
+  <file id="public.es">
+    <unit id="qvIyBkY" name="title">
+      <notes>
+        <note priority="1">app\templates\default\index.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>title</source>
+        <target>Planificación</target>
+      </segment>
+    </unit>
+    <unit id="bkMut0E" name="home.slider.caption_1">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.slider.caption_1</source>
+        <target>Fácil desde casa</target>
+      </segment>
+    </unit>
+    <unit id="61Wfr_f" name="home.slider.caption_2">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.slider.caption_2</source>
+        <target>Para toda la familia</target>
+      </segment>
+    </unit>
+    <unit id="cZxchta" name="home.slider.caption_3">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.slider.caption_3</source>
+        <target>Todo en uno solo</target>
+      </segment>
+    </unit>
+    <unit id="7mgL1Rs" name="home.slider.caption_4">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.slider.caption_4</source>
+        <target>Fácil uso</target>
+      </segment>
+    </unit>
+    <unit id="07xqNyB" name="home.title_1">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.title_1</source>
+        <target>Los niños necesitas a sus héroes</target>
+      </segment>
+    </unit>
+    <unit id="srT7b9E" name="home.text_1">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.text_1</source>
+        <target>A través de una buena organización Usted puede tener más tiempo para sus hijos.</target>
+      </segment>
+    </unit>
+    <unit id="X5kd6BQ" name="home.title_2">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.title_2</source>
+        <target>Notificaciones directas a tu celular</target>
+      </segment>
+    </unit>
+    <unit id="0DMs_3Z" name="home.text_2">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.text_2</source>
+        <target>Toda la información en un solo lugar. No pierda ninguna cita o información importante.</target>
+      </segment>
+    </unit>
+    <unit id="N6WsZvl" name="home.title_3">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.title_3</source>
+        <target>Comunicación crea relación</target>
+      </segment>
+    </unit>
+    <unit id="5e42aHQ" name="home.text_3">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.text_3</source>
+        <target>Buena comunicación en la familia, crea un mejor entendimiento entre cada miembro.</target>
+      </segment>
+    </unit>
+    <unit id="eCCgqaF" name="home.title_4">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.title_4</source>
+        <target>Mayor tiempo y mejor organización</target>
+      </segment>
+    </unit>
+    <unit id="DEW.1gN" name="home.text_4">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>home.text_4</source>
+        <target>Su niño tendrá más tiempo para aprender o jugar a través de una mejor organización.</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

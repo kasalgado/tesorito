@@ -1,0 +1,34 @@
+<nav id="nav-header" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            <ul class="navbar-nav mr-auto">
+                {% if app.session.get('environment') == monitor %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('_admin_panel') }}">{{ 'header.manage'|trans }}</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('_monitor') }}">{{ 'header.monitor'|trans }}</a>
+                    </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_logout') }}">{{ 'header.logout'|trans }}</a>
+                </li>
+            </ul>
+        {% else %}
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_login') }}">{{ 'header.login'|trans }}</a>
+                </li>
+            </ul>
+        {% endif %}
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="text-right">
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            <i class="fas fa-user"></i> <small>{{ app.user.name }}</small>
+        {% endif %}
+    </div>
+</nav>

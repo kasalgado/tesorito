@@ -1,0 +1,28 @@
+{% extends '/admin/base.html.twig' %}
+{% block title %}{{ 'meal.title'|trans }}{% endblock %}
+
+{% block body %}
+    <h4 class="pl-3">{{ 'meal.new'|trans }}</h4>
+    <hr>
+    {{ form_start(form) }}
+        <div class="form-group">
+            {{ form_label(form.week, null, { 'label_attr': {'class': 'control-label col-lg-2'} }) }}
+            <div class="col-sm-6">
+                {{ form_widget(form.week, { 'attr': {'class': 'form-control', 'data-url': path('_dining_plan_fetch')} }) }}
+            </div>
+        </div>
+        <div id="days-container"></div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button id="btn-submit-plan" class="btn btn-success" type="submit" disabled="disabled">{{ 'add'|trans }}</button>
+                <a href="{{ path('_admin_panel') }}" class="btn btn-dark">{{ 'cancel'|trans }}</a>
+                <a href="{{ path('_admin_dish_create') }}" class="btn btn-warning">{{ 'dish.new'|trans }}</a>
+            </div>
+        </div>
+    {{ form_end(form) }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('build/meal.js') }}"></script>
+{% endblock %}

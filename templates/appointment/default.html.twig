@@ -1,0 +1,31 @@
+{% if appointments %}
+    {% for appointment in appointments %}
+        {% set dayNumber = appointment.dateTime|date('w') %}
+        <div class="small text-secondary">{{ appointment.dateTime|date('d.m.Y H:i') }} ({{ days[dayNumber] }})</div>
+        <div class="mb-2">{{ appointment.description }}</div>
+        {% if app.session.get('environment') == admin %}
+            <div class="mb-3">
+                {% if appointment.weekly %}
+                    <i class="fas fa-calendar text-warning mr-1"></i>&nbsp;|&nbsp;
+                {% endif %}
+                <a href="{{ path('_appointment_today', { 'id': appointment.id }) }}">
+                    <i class="fas fa-clock"></i>
+                </a>&nbsp;|&nbsp;
+                <a href="{{ path('_appointment_edit', { 'id': appointment.id }) }}">
+                    <i class="fas fa-edit"></i>
+                </a>
+                {% if is_granted('ROLE_ADMIN') %}
+                    &nbsp;|&nbsp;
+                    <a href="{{ path('_appointment_delete', { 'id': appointment.id }) }}">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <div class="text-center text-dark">{{ 'appointment.no_data'|trans }}</div>
+{% endif %}
+<div class="hide-from-monitor">
+    <a href="{{ path('_appointment_create') }}" class="btn btn-success">{{ 'new'|trans }}</a>
+</div>

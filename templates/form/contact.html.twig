@@ -1,0 +1,9 @@
+{% block form_row %}
+    {% apply spaceless %}
+        <div class="form-group col-6">
+            {{ form_label(form, null, { 'attr': {'class': 'control-label'} }) }}
+            {{ form_widget(form, { 'attr': {'class': 'form-control'} }) }}
+            <small class="col-sm-offset-2 text-danger">{{ form_errors(form) }}</small>
+        </div>
+    {% endapply %}
+{% endblock form_row %}

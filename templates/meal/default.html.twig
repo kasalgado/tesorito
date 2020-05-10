@@ -1,0 +1,34 @@
+{% if meals %}
+    <div class="container-fluid">
+        <div class="d-none d-lg-block">
+            <div class="row">
+                {% for i in 0..6 %}
+                    {% if i == 0 %}
+                        <div class="col-lg-1 text-center d-none d-lg-block">
+                            {% if backWeek %}
+                                <span class="fetch-week" data-url="{{ path('_meal_show', {'week': week - 1}) }}">
+                                    <i class="fas fa-chevron-circle-left text-black-50"></i>
+                                </span>
+                            {%  endif %}
+                        </div>
+                    {% elseif i == 6 %}
+                        <div class="col-lg-1 text-center d-none d-lg-block">
+                            {% if nextWeek %}
+                                <span class="fetch-week" data-url="{{ path('_meal_show', {'week': week + 1}) }}">
+                                    <i class="fas fa-chevron-circle-right text-black-50"></i>
+                                </span>
+                            {% endif %}
+                        </div>
+                    {% else %}
+                        <div class="col-2 text-center text-muted mb-2">{{ days[i] }}</div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        {% for meal in meals %}
+            {% include '/meal/render-week.html.twig' %}
+        {% endfor %}
+    </div>
+{% else %}
+    <div class="p-3">{{ 'meal.no_data'|trans }}</div>
+{% endif %}

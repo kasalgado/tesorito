@@ -1,0 +1,11 @@
+{% if messages != false %}
+    {% if as_array %}
+        {% for chat in chats %}
+            <div class="small">{{ chat.user.username }} : {{ chat.dateTime|date('d.m.Y - H:i') }} </div>
+            <div class="mb-2">{{ chat.chatText }} </div>
+        {% endfor %}
+    {% else %}
+        <div class="small">{{ app.user.username }} : {{ chat.dateTime|date('d.m.Y - H:i') }} </div>
+        <div class="mb-2">{{ chat.chatText }} </div>
+    {% endif %}
+{% endif %}

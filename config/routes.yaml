@@ -1,0 +1,9 @@
+app_admin:
+    resource: '../src/Controller/Admin/'
+    type:     annotation
+    prefix:   /admin
+
+app_monitor:
+    resource: '../src/Controller/Monitor/'
+    type:     annotation
+    prefix:   /monitor

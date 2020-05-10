@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="es" trgLang="de">
+  <file id="admin.de">
+    <unit id="qvIyBkY" name="title">
+      <notes>
+        <note category="file-source" priority="1">templates/admin/base.html.twig:2</note>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:2</note>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/index.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>title</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="24keUN." name="dish.no_data">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/dish/default.html.twig:21</note>
+      </notes>
+      <segment>
+        <source>dish.no_data</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="krELQ.Y" name="dish.title">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/dish/create.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>dish.title</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="wJ9N1wH" name="dish.new">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/dish/create.html.twig:5</note>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/dish/create.html.twig:15</note>
+      </notes>
+      <segment>
+        <source>dish.new</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="fp5aww8" name="add">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/dish/create.html.twig:13</note>
+      </notes>
+      <segment>
+        <source>add</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="Qq9D42F" name="finish">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/dish/create.html.twig:14</note>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:63</note>
+      </notes>
+      <segment>
+        <source>finish</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="MeBvfYn" name="chat">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:10</note>
+      </notes>
+      <segment>
+        <source>chat</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="J84dG.Q" name="send">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:19</note>
+      </notes>
+      <segment>
+        <source>send</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="rm5Bf67" name="appointments">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:25</note>
+      </notes>
+      <segment>
+        <source>appointments</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="CFFUCEx" name="tasks">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:32</note>
+      </notes>
+      <segment>
+        <source>tasks</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="QENVUiO" name="homework">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:39</note>
+      </notes>
+      <segment>
+        <source>homework</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="6Bl7IPj" name="buy">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:46</note>
+      </notes>
+      <segment>
+        <source>buy</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="AwRSPv." name="goal">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:53</note>
+      </notes>
+      <segment>
+        <source>goal</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="KTcBPyG" name="update">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:62</note>
+      </notes>
+      <segment>
+        <source>update</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="wfAmWC." name="food">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:69</note>
+      </notes>
+      <segment>
+        <source>food</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="GBIpQki" name="manage">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:77</note>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:80</note>
+      </notes>
+      <segment>
+        <source>manage</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="7c8npmp" name="dish">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Resources/views/default/panel.html.twig:87</note>
+      </notes>
+      <segment>
+        <source>dish</source>
+        <target></target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

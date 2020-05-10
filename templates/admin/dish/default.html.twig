@@ -1,0 +1,25 @@
+{% if dishes %}
+    {% for dish in dishes %}
+        <div class="row">
+            <div class="col-lg-1">
+                <i class="far fa-{% if dish.dishType == 1 %}smile{% else %}laugh{% endif %}"></i>
+            </div>
+            <div class="col-lg-10">
+                {{ dish.name }}
+            </div>
+            <div class="col-lg-1">
+                <a href="{{ path('_admin_dish_edit', { 'id': dish.id }) }}">
+                    <i class="fas fa-edit"></i>
+                </a>&nbsp;|&nbsp;
+                <a href="{{ path('_admin_dish_delete', { 'id': dish.id }) }}">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <h4 class="text-center text-dark">{{ 'dish.no_data'|trans({}, 'admin') }}</h4>
+{% endif %}
+<div class="hide-from-monitor">
+    <a href="{{ path('_admin_dish_create') }}" class="btn btn-success">Neu</a>
+</div>

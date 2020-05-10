@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="es" trgLang="es">
+  <file id="forms.es">
+    <unit id="w7n7eKR" name="deposit">
+      <notes>
+        <note priority="1">app\src\AdminBundle\Form\Type\AccountType.php:28</note>
+        <note priority="1">new</note>
+      </notes>
+      <segment>
+        <source>deposit</source>
+        <target>Depósito</target>
+      </segment>
+    </unit>
+    <unit id="wm8i24P" name="withdraw">
+      <notes>
+        <note priority="1">app\src\AdminBundle\Form\Type\AccountType.php:28</note>
+        <note priority="1">new</note>
+      </notes>
+      <segment>
+        <source>withdraw</source>
+        <target>Retiro</target>
+      </segment>
+    </unit>
+    <unit id="EwPAaws" name="type">
+      <notes>
+        <note priority="1">app\src\AdminBundle\Form\Type\AccountType.php:26</note>
+        <note priority="1">app\src\AdminBundle\Form\Type\DishType.php:18</note>
+      </notes>
+      <segment>
+        <source>type</source>
+        <target>Tipo</target>
+      </segment>
+    </unit>
+    <unit id="zUJATVK" name="value">
+      <notes>
+        <note priority="1">app\src\AdminBundle\Form\Type\AccountType.php:33</note>
+        <note priority="1">new</note>
+      </notes>
+      <segment>
+        <source>value</source>
+        <target>Valor</target>
+      </segment>
+    </unit>
+    <unit id="yQRveje" name="description">
+      <notes>
+        <note priority="1">app\src\AdminBundle\Form\Type\AccountType.php:36</note>
+        <note priority="1">app\src\Form\Type\AppointmentType.php:26</note>
+        <note priority="1">app\src\Form\Type\BuyType.php:22</note>
+        <note priority="1">app\src\Form\Type\TaskType.php:24</note>
+      </notes>
+      <segment>
+        <source>description</source>
+        <target>Descripción</target>
+      </segment>
+    </unit>
+    <unit id="BPiZbad" name="user">
+      <notes>
+        <note priority="1">app\src\AdminBundle\Form\Type\AccountType.php:21</note>
+        <note priority="1">new</note>
+      </notes>
+      <segment>
+        <source>user</source>
+        <target>Usuario</target>
+      </segment>
+    </unit>
+    <unit id="RGUR4_O" name="without meat">
+      <notes>
+        <note priority="1">app\src\AdminBundle\Form\Type\DishType.php:20</note>
+      </notes>
+      <segment>
+        <source>without meat</source>
+        <target>sin carne</target>
+      </segment>
+    </unit>
+    <unit id="jwBUviL" name="with meat">
+      <notes>
+        <note priority="1">app\src\AdminBundle\Form\Type\DishType.php:20</note>
+      </notes>
+      <segment>
+        <source>with meat</source>
+        <target>con carne</target>
+      </segment>
+    </unit>
+    <unit id="gqNTf.D" name="name">
+      <notes>
+        <note priority="1">app\src\AdminBundle\Form\Type\DishType.php:22</note>
+      </notes>
+      <segment>
+        <source>name</source>
+        <target>Nombre</target>
+      </segment>
+    </unit>
+    <unit id="vaE3Uu_" name="date_hour">
+      <notes>
+        <note priority="1">app\src\Form\Type\AppointmentType.php:22</note>
+      </notes>
+      <segment>
+        <source>date_hour</source>
+        <target>Fecha/Hora</target>
+      </segment>
+    </unit>
+    <unit id="iFDs7Zh" name="weekly">
+      <notes>
+        <note priority="1">app\src\Form\Type\AppointmentType.php:30</note>
+      </notes>
+      <segment>
+        <source>weekly</source>
+        <target>Semanal</target>
+      </segment>
+    </unit>
+    <unit id="k5Apjz_" name="no">
+      <notes>
+        <note priority="1">app\src\Form\Type\BuyType.php:27</note>
+      </notes>
+      <segment>
+        <source>no</source>
+        <target>No</target>
+      </segment>
+    </unit>
+    <unit id="inmIkP6" name="yes">
+      <notes>
+        <note priority="1">app\src\Form\Type\BuyType.php:27</note>
+      </notes>
+      <segment>
+        <source>yes</source>
+        <target>si</target>
+      </segment>
+    </unit>
+    <unit id="OthaC2Q" name="final_date">
+      <notes>
+        <note priority="1">app\src\Form\Type\BuyType.php:19</note>
+      </notes>
+      <segment>
+        <source>final_date</source>
+        <target>Fecha final</target>
+      </segment>
+    </unit>
+    <unit id="BTQ_mEU" name="finished">
+      <notes>
+        <note priority="1">app\src\Form\Type\BuyType.php:25</note>
+      </notes>
+      <segment>
+        <source>finished</source>
+        <target>Terminado</target>
+      </segment>
+    </unit>
+    <unit id="q1MKE_R" name="message">
+      <notes>
+        <note priority="1">app\src\Form\Type\ChatType.php:17</note>
+      </notes>
+      <segment>
+        <source>message</source>
+        <target>Mensaje</target>
+      </segment>
+    </unit>
+    <unit id="AwRSPv." name="goal">
+      <notes>
+        <note priority="1">app\src\Form\Type\GoalType.php:18</note>
+      </notes>
+      <segment>
+        <source>goal</source>
+        <target>Meta</target>
+      </segment>
+    </unit>
+    <unit id="iXXJtOo" name="percentage">
+      <notes>
+        <note priority="1">app\src\Form\Type\GoalType.php:21</note>
+      </notes>
+      <segment>
+        <source>percentage</source>
+        <target>Porcentaje</target>
+      </segment>
+    </unit>
+    <unit id="bfN9qqR" name="week">
+      <notes>
+        <note priority="1">app\src\Form\Type\MealType.php:17</note>
+      </notes>
+      <segment>
+        <source>week</source>
+        <target>Semana</target>
+      </segment>
+    </unit>
+    <unit id="TP3eab3" name="firstname">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>firstname</source>
+        <target>Nombre</target>
+      </segment>
+    </unit>
+    <unit id="VbXFH4Z" name="lastname">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>lastname</source>
+        <target>Apellido</target>
+      </segment>
+    </unit>
+    <unit id="giREF.l" name="email">
+      <notes>
+        <note priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>email</source>
+        <target>Email</target>
+      </segment>
+    </unit>
+    <unit id="tRLZfny" name="User">
+      <segment>
+        <source>User</source>
+        <target>Usuario</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

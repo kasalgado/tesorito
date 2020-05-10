@@ -1,0 +1,23 @@
+{% set currentMeal = null %}
+{% for mealDish in meal.getMealDishes %}
+    {% if mealDish.getWeekDay == i %}
+        {% set currentMeal = mealDish %}
+    {% endif %}
+{% endfor %}
+{% if currentMeal %}
+    <div class="col-lg-2">
+        <div class="d-lg-none ml-1">
+            <span class="text-muted">{{ days[currentMeal.getWeekDay] }}</span>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <i class="far{% if currentMeal.getDishes.getDishType == 1 %} fa-laugh text-success{% else %} fa-smile{% endif %} fa-2x"></i>
+            </div>
+            <div class="col-9 ml-1">
+                <div class="small">{{ currentMeal.getDishes.getName }}</div>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <div class="col-lg-2 text-muted small"></div>
+{% endif %}

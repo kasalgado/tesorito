@@ -1,0 +1,11 @@
+<div class="row pt-3">
+    {% for i in 0..6 %}
+        {% if i == 0 %}
+            <div class="col-lg-1 d-none d-lg-block"></div>
+        {% elseif i == 6 %}
+            <div class="col-lg-1 d-none d-lg-block"></div>
+        {% else %}
+            {% include '/meal/current-meal.html.twig' %}
+        {% endif %}
+    {% endfor %}
+</div>

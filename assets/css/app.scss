@@ -1,0 +1,14 @@
+body {
+    background-color: lightgray;
+}
+
+.hello {
+    color: blue;
+    font-size: 2em;
+    
+    p {
+        color: yellow;
+    }
+}
+
+@import "~bootstrap/scss/bootstrap";

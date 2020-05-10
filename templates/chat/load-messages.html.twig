@@ -1,0 +1,4 @@
+{% for message in messages|reverse %}
+    <div class="small text-bold">{{ message.user.username }} : {{ message.dateTime|date('d.m.Y - H:i') }} </div>
+    <div class="mb-2">{{ message.chatText }} </div>
+{% endfor %}

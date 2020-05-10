@@ -1,0 +1,43 @@
+{% if tasks %}
+    {% for task in tasks %}
+        <div class="row">
+            {% if task.completed %}
+                <div class="col-1">
+                    <i class="far fa-check-square text-success"></i>
+                </div>
+            {% else %}
+                <div id="task" class="col-1 action-completed" data-url="{{ path('_task_completed', {'id': task.id}) }}">
+                    <i class="far fa-square text-black-50"></i>
+                </div>
+            {% endif %}
+            <div class="col-10">
+                {{ task.description }}
+            </div>
+        </div>
+        {% if is_granted('ROLE_ADMIN') %}
+            <div class="row hide-from-monitor mb-3">
+                <div class="col-12">
+                    <small>{{ task.onDay|date('d.m.Y') }}</small>
+                </div>
+                <div class="col-12">
+                    <a href="{{ path('_task_today', { 'id': task.id }) }}">
+                        <i class="fas fa-clock"></i>
+                    </a>&nbsp;|&nbsp;
+                    <a href="{{ path('_task_edit', { 'id': task.id }) }}">
+                        <i class="fas fa-edit"></i>
+                    </a>&nbsp;|&nbsp;
+                    <a href="{{ path('_task_delete', { 'id': task.id }) }}">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <div class="text-center">{{ 'task.no_data'|trans }}</div>
+{% endif %}
+{% if is_granted('ROLE_ADMIN') %}
+    <div class="hide-from-monitor">
+        <a href="{{ path('_task_create') }}" class="btn btn-success">{{ 'new'|trans }}</a>
+    </div>
+{% endif %}

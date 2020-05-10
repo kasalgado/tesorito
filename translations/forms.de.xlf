@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="es" trgLang="de">
+  <file id="forms.de">
+    <unit id="AwRSPv." name="goal">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/GoalType.php:18</note>
+      </notes>
+      <segment>
+        <source>goal</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="iXXJtOo" name="percentage">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/GoalType.php:21</note>
+      </notes>
+      <segment>
+        <source>percentage</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="yQRveje" name="description">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/TaskType.php:24</note>
+        <note category="file-source" priority="1">src/Form/Type/AppointmentType.php:25</note>
+        <note category="file-source" priority="1">src/Form/Type/BuyType.php:22</note>
+      </notes>
+      <segment>
+        <source>description</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="bfN9qqR" name="week">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/MealType.php:17</note>
+      </notes>
+      <segment>
+        <source>week</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="q1MKE_R" name="message">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/ChatType.php:17</note>
+        <note category="file-source" priority="1">src/PublicBundle/Form/Type/ContactType.php:28</note>
+      </notes>
+      <segment>
+        <source>message</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="vaE3Uu_" name="date_hour">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/AppointmentType.php:21</note>
+      </notes>
+      <segment>
+        <source>date_hour</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="k5Apjz_" name="no">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/BuyType.php:27</note>
+      </notes>
+      <segment>
+        <source>no</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="inmIkP6" name="yes">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/BuyType.php:27</note>
+      </notes>
+      <segment>
+        <source>yes</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="OthaC2Q" name="final_date">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/BuyType.php:19</note>
+      </notes>
+      <segment>
+        <source>final_date</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="BTQ_mEU" name="finished">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/BuyType.php:25</note>
+      </notes>
+      <segment>
+        <source>finished</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="RGUR4_O" name="without meat">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Form/Type/DishType.php:20</note>
+      </notes>
+      <segment>
+        <source>without meat</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="jwBUviL" name="with meat">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Form/Type/DishType.php:20</note>
+      </notes>
+      <segment>
+        <source>with meat</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="EwPAaws" name="type">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Form/Type/DishType.php:18</note>
+      </notes>
+      <segment>
+        <source>type</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="gqNTf.D" name="name">
+      <notes>
+        <note category="file-source" priority="1">src/AdminBundle/Form/Type/DishType.php:22</note>
+      </notes>
+      <segment>
+        <source>name</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="TP3eab3" name="firstname">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Form/Type/ContactType.php:19</note>
+      </notes>
+      <segment>
+        <source>firstname</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="VbXFH4Z" name="lastname">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Form/Type/ContactType.php:22</note>
+      </notes>
+      <segment>
+        <source>lastname</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="giREF.l" name="email">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Form/Type/ContactType.php:25</note>
+      </notes>
+      <segment>
+        <source>email</source>
+        <target></target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

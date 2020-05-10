@@ -1,0 +1,57 @@
+html {
+    background-color: #f9ecec;
+}
+
+.toggle-nav {
+    left: 25px;
+    position: absolute;
+    top: -20px;
+    z-index: 1001;
+    
+    .fa-caret-down {
+        color: #f8f9fa;
+        cursor: pointer;
+        text-shadow: -1px 0 #4169E1, 0 1px #4169E1, 1px 0 #4169E1, 0 -1px #4169E1;
+    }
+}
+
+.col-lg-3 {
+    border: 1px solid #666;
+    height: 256px;
+}
+
+.hide-from-monitor {
+    display: none;
+}
+
+#widget-daily {
+    width: 300px;
+    height: 230px;
+}
+
+#widget-chat {
+    max-height: 200px;
+    overflow-x: auto;
+}
+
+#widget-meal {
+    .fetch-week {
+        cursor: pointer;
+        font-size: 1.3em;
+    }
+}
+
+.action-completed {
+    cursor: pointer;
+}
+
+.btn-show-field {
+    background-color: rgb(237, 240, 218);
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.box-message {
+    display: none;
+    margin: -32px 0 0 25px; 
+}

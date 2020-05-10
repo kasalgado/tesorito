@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="es" trgLang="de">
+  <file id="public.de">
+    <unit id="qvIyBkY" name="title">
+      <notes>
+        <note category="file-source" priority="1">templates/public/base.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>title</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="bkMut0E" name="home.slider.caption_1">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:16</note>
+      </notes>
+      <segment>
+        <source>home.slider.caption_1</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="61Wfr_f" name="home.slider.caption_2">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:21</note>
+      </notes>
+      <segment>
+        <source>home.slider.caption_2</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="cZxchta" name="home.slider.caption_3">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:26</note>
+      </notes>
+      <segment>
+        <source>home.slider.caption_3</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="7mgL1Rs" name="home.slider.caption_4">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:31</note>
+      </notes>
+      <segment>
+        <source>home.slider.caption_4</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="07xqNyB" name="home.title_1">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:55</note>
+      </notes>
+      <segment>
+        <source>home.title_1</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="srT7b9E" name="home.text_1">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:56</note>
+      </notes>
+      <segment>
+        <source>home.text_1</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="X5kd6BQ" name="home.title_2">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:66</note>
+      </notes>
+      <segment>
+        <source>home.title_2</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="0DMs_3Z" name="home.text_2">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:67</note>
+      </notes>
+      <segment>
+        <source>home.text_2</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="N6WsZvl" name="home.title_3">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:79</note>
+      </notes>
+      <segment>
+        <source>home.title_3</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="5e42aHQ" name="home.text_3">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:80</note>
+      </notes>
+      <segment>
+        <source>home.text_3</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="eCCgqaF" name="home.title_4">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:90</note>
+      </notes>
+      <segment>
+        <source>home.title_4</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="DEW.1gN" name="home.text_4">
+      <notes>
+        <note category="file-source" priority="1">src/PublicBundle/Resources/views/default/index.html.twig:91</note>
+      </notes>
+      <segment>
+        <source>home.text_4</source>
+        <target></target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

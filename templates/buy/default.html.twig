@@ -1,0 +1,39 @@
+{% if products %}
+    {% for product in products %}
+        <div class="text-secondary small">{{ 'until'|trans }} {{ product.endDay|date('d.m.Y') }}</div>
+        <div class="row mb-2">
+            <div class="col-10">
+                {{ product.description }}
+            </div>
+            {% if is_granted('ROLE_ADMIN') or product.completed %}
+                {% if product.completed %}
+                    <div class="col-1">
+                        <i class="far fa-check-square text-success"></i>
+                    </div>
+                {% else %}
+                    <div id="buy" class="col-1 action-completed" data-url="{{ path('_buy_completed', {'id': product.id}) }}">
+                        <i class="far fa-square text-black-50"></i>
+                    </div>
+                {% endif %}
+            {% endif %}
+        </div>
+        {% if app.session.get('environment') == admin %}
+            <div class="mb-3">
+                <a href="{{ path('_buy_edit', { 'id': product.id }) }}">
+                    <i class="fas fa-edit"></i>
+                </a>
+                {% if is_granted('ROLE_ADMIN') %}
+                    &nbsp;|&nbsp;
+                    <a href="{{ path('_buy_delete', { 'id': product.id }) }}">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <div class="text-center">{{ 'buy.no_data'|trans }}</div>
+{% endif %}
+<div class="hide-from-monitor">
+    <a href="{{ path('_buy_create') }}" class="btn btn-success">{{ 'new'|trans }}</a>
+</div>

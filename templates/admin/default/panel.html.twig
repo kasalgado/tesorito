@@ -1,0 +1,147 @@
+{% extends '/admin/base.html.twig' %}
+{% block title %}{{ 'title'|trans({}, 'admin') }}{% endblock %}
+
+{% block body %}
+    <div id="widget-daily">
+        {% include '/daily/default.html.twig' %}
+    </div>
+
+    <div id="admin-accordion" class="accordion">
+        <div class="card">
+            <div id="chat-heading" class="card-header">
+                <button id="chat" data-url="{{ path('_chat_message_append') }}" class="btn btn-link fetch-data" type="button" data-toggle="collapse" data-target="#context-0" aria-expanded="false">
+                    {{ 'chat'|trans({}, 'admin') }}
+                </button>
+            </div>
+            <div id="context-0" class="collapse mt-2" aria-labelledby="chat-heading" data-parent="#admin-accordion">
+                <div id="chat-messages-container">
+                    {% include '/chat/load-messages.html.twig' %}
+                </div>
+                {% form_theme form '/form/chat-create.html.twig' %}
+                    {{ form_widget(form) }}
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="btn-message-send" class="btn btn-success" data-url="{{ path('_chat_message_send') }}" type="submit">
+                                {{ 'send'|trans({}, 'admin') }}
+                            </button>
+                        </div>
+                    </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="appointment-heading" class="card-header">
+                <button id="appointment" data-url="{{ path('_appointment_list') }}" class="btn btn-link fetch-data" type="button" data-toggle="collapse" data-target="#context-1">
+                    {{ 'appointments'|trans({}, 'admin') }}
+                </button>
+            </div>
+            <div id="context-1" class="collapse mb-2 pl-3">
+                <div id="widget-appointment">
+                    {% include '/appointment/default.html.twig' %}
+                </div>
+            </div>
+        </div>
+                
+        <div class="card">
+            <div id="task-heading" class="card-header">
+                <button id="task" data-url="{{ path('_task_list') }}" class="btn btn-link fetch-data" type="button" data-toggle="collapse" data-target="#context-2">
+                    {{ 'tasks'|trans({}, 'admin') }}
+                </button>
+            </div>
+            <div id="context-2" class="collapse mb-2 pl-3">
+                <div id="widget-task">
+                    {% include '/task/default.html.twig' %}
+                </div>
+            </div>
+        </div>
+                
+        <div class="card">
+            <div id="homework-heading" class="card-header">
+                <button id="homework" data-url="{{ path('_homework_list') }}" class="btn btn-link fetch-data" type="button" data-toggle="collapse" data-target="#context-3">
+                    {{ 'homework'|trans({}, 'admin') }}
+                </button>
+            </div>
+            <div id="context-3" class="collapse mb-2 pl-3">
+                <div id="widget-homework" class="col-lg-3">
+                    {% include '/homework/default.html.twig' %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="buy-heading" class="card-header">
+                <button id="buy" data-url="{{ path('_buy_list') }}" class="btn btn-link fetch-data" type="button" data-toggle="collapse" data-target="#context-4">
+                    {{ 'buy'|trans({}, 'admin') }}
+                </button>
+            </div>
+            <div id="context-4" class="collapse mb-2 pl-3">
+                <div id="widget-buy">
+                    {% include '/buy/default.html.twig' %}
+                </div>
+            </div>
+        </div>
+                
+        <div class="card">
+            <div id="money-heading" class="card-header">
+                <button id="money" class="btn btn-link" type="button" data-toggle="collapse" data-target="#context-6">
+                    {{ 'banking'|trans({}, 'admin') }}
+                </button>
+            </div>
+            <div id="context-6" class="collapse mb-2 pl-3">
+                <div id="widget-money">
+                    {% include '/admin/money/default.html.twig' %}
+                </div>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <div>
+                        <a href="{{ path('_admin_money_create') }}" class="btn btn-primary">{{ 'new'|trans }}</a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="meal-heading" class="card-header">
+                <button id="meal" class="btn btn-link" type="button" data-toggle="collapse" data-target="#context-7">
+                    {{ 'food'|trans({}, 'admin') }}
+                </button>
+            </div>
+            <div id="context-7" class="collapse mb-2">
+                {% if is_granted('ROLE_ADMIN') %}
+                    <div id="widget-meal">
+                        {% include '/admin/dining_plan/default.html.twig' %}
+                    </div>
+                    <div class="text-right mt-4">
+                        <a href="{{ path('_dining_plan_create') }}" class="btn btn-success">
+                            <i class="fas fa-home"></i> {{ 'manage'|trans({}, 'admin') }}
+                        </a>
+                    </div>
+                {% else %}
+                    <div id="widget-meal">
+                        {% include '/meal/default.html.twig' %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if is_granted('ROLE_ADMIN') %}
+            <div class="card">
+                <div id="dish-heading" class="card-header">
+                    <button id="dish" class="accordion" type="button" data-toggle="collapse" data-target="#context-8">
+                        {{ 'dish'|trans({}, 'admin') }}
+                    </button>
+                </div>
+                <div id="context-8" class="collapse mb-2 pl-3">
+                    <div id="widget-dish">
+                        {% include '/admin/dish/default.html.twig' %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('admin') }}
+    {{ encore_entry_script_tags('chart') }}
+{% endblock %}

@@ -1,0 +1,6 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    
+    globals:
+        admin: '%environment_admin%'
+        monitor: '%environment_monitor%'

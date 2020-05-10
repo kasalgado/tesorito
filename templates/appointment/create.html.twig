@@ -1,0 +1,26 @@
+{% extends '/admin/base.html.twig' %}
+{% block title %}{{ 'appointments'|trans({}, 'admin') }}{% endblock %}
+
+{% block body %}
+    <h4 class="pl-3">{{ 'appointment.new'|trans }}</h4>
+    <hr>
+    <form id="form-appointment-create" class="form-horizontal" action="{{ path('_appointment_create') }}" method="POST">
+        {% form_theme form '/form/appointment-create.html.twig' %}
+            {{ form_widget(form) }}
+            <input type="hidden" name="id" value="{{ id }}" />
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-success" type="submit">{{ 'add'|trans }}</button>
+                    <a href="{{ path('_admin_panel') }}" class="btn btn-warning">{{ 'cancel'|trans }}</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input id="new_appointment" type="checkbox" name="new_appointment" value="1" />
+                    <label for="new_appointment">{{ 'task.next'|trans }}</label>
+                </div>
+            </div>
+        {{ form_end(form) }}
+    </form>
+{% endblock %}
+

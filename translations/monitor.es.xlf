@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="es" trgLang="es">
+  <file id="monitor.es">
+    <unit id="qvIyBkY" name="title">
+      <notes>
+        <note priority="1">app\templates\monitor\base.html.twig:2</note>
+        <note priority="1">app\src\MonitorBundle\Resources\views\default\index.html.twig:2</note>
+      </notes>
+      <segment>
+        <source>title</source>
+        <target>Monitor</target>
+      </segment>
+    </unit>
+    <unit id="CFFUCEx" name="tasks">
+      <notes>
+        <note priority="1">app\src\MonitorBundle\Resources\views\default\index.html.twig:20</note>
+      </notes>
+      <segment>
+        <source>tasks</source>
+        <target>Tareas</target>
+      </segment>
+    </unit>
+    <unit id="QENVUiO" name="homework">
+      <notes>
+        <note priority="1">app\src\MonitorBundle\Resources\views\default\index.html.twig:38</note>
+      </notes>
+      <segment>
+        <source>homework</source>
+        <target>Tarea escolar</target>
+      </segment>
+    </unit>
+    <unit id="AwRSPv." name="goal">
+      <notes>
+        <note priority="1">app\src\MonitorBundle\Resources\views\default\index.html.twig:51</note>
+      </notes>
+      <segment>
+        <source>goal</source>
+        <target>Meta</target>
+      </segment>
+    </unit>
+    <unit id="rm5Bf67" name="appointments">
+      <notes>
+        <note priority="1">app\src\MonitorBundle\Resources\views\default\index.html.twig:58</note>
+      </notes>
+      <segment>
+        <source>appointments</source>
+        <target>Citas</target>
+      </segment>
+    </unit>
+    <unit id="6Bl7IPj" name="buy">
+      <notes>
+        <note priority="1">app\src\MonitorBundle\Resources\views\default\index.html.twig:65</note>
+      </notes>
+      <segment>
+        <source>buy</source>
+        <target>Comprar</target>
+      </segment>
+    </unit>
+    <unit id="MeBvfYn" name="chat">
+      <notes>
+        <note priority="1">app\src\MonitorBundle\Resources\views\default\index.html.twig:73</note>
+      </notes>
+      <segment>
+        <source>chat</source>
+        <target>Chat</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

@@ -1,0 +1,20 @@
+{% for i in 1..5 %}
+    <div class="form-group">
+        <label class="control-label col-sm-2">{{ days[i] }}</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="dish[]">
+                <option value="0">{{ 'meal.select_dish'|trans }}</option>
+                {% for dish in dishes %}
+                    {% set selected = '' %}
+                    {% for mealDish in mealDishes %}
+                        {% if mealDish.weekDay == i and mealDish.getDishes.getId == dish.id %}
+                            {% set selected = ' selected="selected"' %}
+                        {% endif %}
+                    {% endfor %}
+                    <option value="{{ dish.id }}"{{ selected }}>{{ dish.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+{% endfor %}
+<input id="week" type="hidden" name="week" value="{{ week }}" />
