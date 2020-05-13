@@ -13,7 +13,7 @@
             <tr>
                 <td>{{ transaction.onDate|date('d.m.Y') }}</td>
                 <td>{% if transaction.transType == constant('App\\Service\\Money::TRANSACTION_DEPOSIT') %}{{ 'deposit'|trans({}, 'admin') }}{% else %}{{ 'withdraw'|trans({}, 'admin') }}{% endif %}</td>
-                <td>{{ transaction.amount|number_format(2, ',', '.') }}</td>
+                <td>{% if transaction.transType == constant('App\\Service\\Money::TRANSACTION_DEPOSIT') %}+ {% else %}- {% endif %}{{ transaction.amount|number_format(2, ',', '.') }}</td>
                 <td>{{ transaction.balance|number_format(2, ',', '.') }}</td>
                 <td><a data-toggle="collapse" href="#description-{{ transaction.id }}" role="button" aria-expanded="false" aria-controls="description-{{ transaction.id }}">&#709;</a></td>
             </tr>
