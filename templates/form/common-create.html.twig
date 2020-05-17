@@ -3,7 +3,7 @@
         <div class="form-group">
             <label class="control-label col-sm-2">{{ form_label(form) }}</label>
             <div class="col-sm-6">
-                {% if label == 'date' or label == 'date_hour' or label == 'final_date' %}
+                {% if label == 'date' or label == 'date_hour' or label == 'final_date' or label == 'duration' %}
                     {{ form_widget(form) }}
                 {% else %}
                     {{ form_widget(form, { 'attr': {'class': 'form-control'} }) }}

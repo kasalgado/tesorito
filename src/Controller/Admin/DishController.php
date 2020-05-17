@@ -20,7 +20,7 @@ class DishController extends AbstractController
     public function create(Request $request)
     {
         $id = $request->get('id');
-        $dish = $id ? $this->getDoctrine()->getRepository(Dish::class)->find($id) : new Dish();
+        $dish = $id ? $this->repository()->find($id) : new Dish();
         $form = $this->createForm(DishType::class, $dish);
         $form->handleRequest($request);
         
@@ -49,5 +49,10 @@ class DishController extends AbstractController
         $em->flush();
 
         return $this->redirect($this->generateUrl('_admin_panel'));
+    }
+
+    private function repository()
+    {
+        return $this->getDoctrine()->getRepository(Dish::class);
     }
 }
