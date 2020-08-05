@@ -1,0 +1,25 @@
+{% if trainings %}
+    {% for training in trainings %}
+        <div class="row">
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-10">
+                {{ training.dateAt }}
+            </div>
+            <div class="col-lg-1">
+                <a href="{{ path('_admin_training_edit', { 'id': training.id }) }}">
+                    <i class="fas fa-edit"></i>
+                </a>&nbsp;|&nbsp;
+                <a href="{{ path('_admin_training_delete', { 'id': training.id }) }}">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <h4 class="text-center text-dark">{{ 'training.no_data'|trans({}, 'admin') }}</h4>
+{% endif %}
+<div class="hide-from-monitor">
+    <a href="{{ path('_admin_training_create') }}" class="btn btn-success">{{ 'new'|trans({}, 'admin') }}</a>
+</div>

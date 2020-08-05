@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 
 use App\Entity\Money as MoneyEntity;
-use App\Form\Type\Admin\AccountType;
+use App\Form\Admin\AccountType;
 use App\Service\Money;
 use App\Service\TransactionInterface;
 use App\Service\Deposit;

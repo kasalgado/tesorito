@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManagerInterface;
 
 use App\Entity\Buy;
-use App\Form\Type\BuyType;
+use App\Form\BuyType;
 use App\Service\Observer;
 use App\Service\DataCache;
 use App\Repository\BuyRepository;

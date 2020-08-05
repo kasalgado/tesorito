@@ -3,7 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\TrainingTask;
-use App\Form\Type\Admin\TrainingTaskType;
+use App\Form\Admin\TrainingTaskType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;

@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use App\Entity\Meal;
 use App\Entity\MealDish;
 use App\Entity\Dish;
-use App\Form\Type\MealType;
+use App\Form\MealType;
 use App\Repository\MealRepository;
 use App\Utils\WeekDays;
 

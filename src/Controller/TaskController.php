@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManagerInterface;
 
-use App\Form\Type\TaskType;
+use App\Form\TaskType;
 use App\Entity\Task;
 use App\Service\Observer;
 use App\Service\DataCache;

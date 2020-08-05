@@ -1,29 +1,29 @@
 <?php
 
-namespace App\Form\Type;
+namespace App\Form\Admin;
 
+use App\Entity\Training;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
-use App\Entity\Chat;
-
-class ChatType extends AbstractType
+class TrainingType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('chat_text', TextType::class, [
-                'label' => 'message',
-            ]);
+            ->add('dateAt', DateTimeType::class, [
+                'label' => 'date',
+                'translation_domain' => 'forms',
+            ])
         ;
     }
-    
+
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Chat::class,
+            'data_class' => Training::class,
             'translation_domain' => 'forms',
         ]);
     }

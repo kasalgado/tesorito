@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
 use App\Controller\DataController;
-use App\Form\Type\ChatType;
+use App\Form\ChatType;
 use App\Entity\Chat;
 use App\Entity\Money;
 use App\Entity\Buy;
@@ -51,6 +51,7 @@ class DefaultController extends DataController
                 'daily' => $dailyManager->get(),
                 'products' => $this->repository(Buy::class)->findByEndDay(true),
                 'transactions' => $this->repository(Money::class)->findByUserId(),
+                'trainings' => [],
             ]
         );
     }

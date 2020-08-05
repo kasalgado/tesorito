@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManagerInterface;
 
 use App\Entity\Appointment;
-use App\Form\Type\AppointmentType;
+use App\Form\AppointmentType;
 use App\Service\DataCache;
 use App\Service\Observer;
 use App\Utils\WeekDays;

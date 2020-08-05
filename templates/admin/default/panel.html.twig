@@ -127,13 +127,26 @@
         {% if is_granted('ROLE_ADMIN') %}
             <div class="card">
                 <div id="dish-heading" class="card-header">
-                    <button id="dish" class="accordion" type="button" data-toggle="collapse" data-target="#context-8">
+                    <button id="dish" class="btn btn-link" type="button" data-toggle="collapse" data-target="#context-8">
                         {{ 'dish'|trans({}, 'admin') }}
                     </button>
                 </div>
                 <div id="context-8" class="collapse mb-2 pl-3">
                     <div id="widget-dish">
                         {% include '/admin/dish/default.html.twig' %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="training-heading" class="card-header">
+                    <button id="training" class="btn btn-link" type="button" data-toggle="collapse" data-target="#context-9">
+                        {{ 'training'|trans({}, 'admin') }}
+                    </button>
+                </div>
+                <div id="context-9" class="collapse mb-2 pl-3">
+                    <div id="widget-training">
+                        {% include '/admin/training/default.html.twig' %}
                     </div>
                 </div>
             </div>

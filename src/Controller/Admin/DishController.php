@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 
 use App\Entity\Dish;
-use App\Form\Type\Admin\DishType;
+use App\Form\Admin\DishType;
 
 class DishController extends AbstractController
 {
