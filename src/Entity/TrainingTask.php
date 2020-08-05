@@ -17,6 +17,11 @@ class TrainingTask
     private $id;
 
     /**
+     * @ORM\Column(type="string", length=64)
+     */
+    private $name;
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
     private $description;
@@ -27,13 +32,31 @@ class TrainingTask
     private $duration;
 
     /**
-     * @ORM\Column(type="string", length=64)
+     * @ORM\Column(type="boolean")
      */
-    private $name;
+    private $completed;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Training", inversedBy="trainingtasks")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $training;
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
     }
 
     public function getDescription(): ?string
@@ -60,14 +83,26 @@ class TrainingTask
         return $this;
     }
 
-    public function getName(): ?string
+    public function getCompleted(): ?bool
     {
-        return $this->name;
+        return $this->completed;
     }
 
-    public function setName(string $name): self
+    public function setCompleted(bool $completed): self
     {
-        $this->name = $name;
+        $this->completed = $completed;
+
+        return $this;
+    }
+
+    public function getTraining(): ?Training
+    {
+        return $this->training;
+    }
+
+    public function setTraining(?Training $training): self
+    {
+        $this->training = $training;
 
         return $this;
     }

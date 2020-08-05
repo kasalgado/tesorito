@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -22,14 +24,14 @@ class Training
     private $dateAt;
 
     /**
-     * @ORM\Column(type="json")
+     * @ORM\OneToMany(targetEntity="App\Entity\TrainingTask", mappedBy="training", orphanRemoval=true)
      */
-    private $program = [];
+    private $trainingtasks;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $completed;
+    public function __construct()
+    {
+        $this->trainingtasks = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -48,26 +50,33 @@ class Training
         return $this;
     }
 
-    public function getProgram(): ?array
+    /**
+     * @return Collection|TrainingTask[]
+     */
+    public function getTrainingtasks(): Collection
     {
-        return $this->program;
+        return $this->trainingtasks;
     }
 
-    public function setProgram(array $program): self
+    public function addTrainingtask(TrainingTask $trainingtask): self
     {
-        $this->program = $program;
+        if (!$this->trainingtasks->contains($trainingtask)) {
+            $this->trainingtasks[] = $trainingtask;
+            $trainingtask->setTraining($this);
+        }
 
         return $this;
     }
 
-    public function getCompleted(): ?bool
+    public function removeTrainingtask(TrainingTask $trainingtask): self
     {
-        return $this->completed;
-    }
-
-    public function setCompleted(bool $completed): self
-    {
-        $this->completed = $completed;
+        if ($this->trainingtasks->contains($trainingtask)) {
+            $this->trainingtasks->removeElement($trainingtask);
+            // set the owning side to null (unless already changed)
+            if ($trainingtask->getTraining() === $this) {
+                $trainingtask->setTraining(null);
+            }
+        }
 
         return $this;
     }
