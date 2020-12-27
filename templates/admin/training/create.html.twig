@@ -5,15 +5,57 @@
     <h4 class="pl-3">{{ 'training.new'|trans }}</h4>
     <hr>
     <form id="form-training-create" class="form-horizontal" action="{{ path('_admin_training_create') }}" method="POST">
-        {% form_theme form '/form/common-create.html.twig' %}
-            {{ form_widget(form) }}
+        {{ form_start(form) }}
+        {% apply spaceless %}
             <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <button class="btn btn-success" type="submit">{{ 'add'|trans }}</button>
-                    <a href="{{ path('_admin_panel') }}" class="btn btn-warning">{{ 'cancel'|trans }}</a>
+                <label class="control-label col-sm-2">{{ form_label(form.dateAt) }}</label>
+                <div class="col-sm-6">
+                    {{ form_widget(form.dateAt) }}
                 </div>
+                <small class="col-sm-offset-2 text-danger">{{ form_errors(form.dateAt) }}</small>
             </div>
+            <div class="trainingtasks" data-prototype="{{ form_widget(form.trainingtasks.vars.prototype)|e('html_attr') }}">
+                {% for task in form.trainingtasks %}
+                    <div class="list-task">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">{{ form_label(task.name) }}</label>
+                            <div class="col-sm-6">
+                                {{ form_widget(task.name, { 'attr': {'class': 'form-control'} }) }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">{{ form_label(task.description) }}</label>
+                            <div class="col-sm-6">
+                                {{ form_widget(task.description, { 'attr': {'class': 'form-control'} }) }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">{{ form_label(task.duration) }}</label>
+                            <div class="col-sm-6">
+                                {{ form_widget(task.duration) }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">{{ form_label(task.completed) }}</label>
+                            <div class="col-sm-6">
+                                {{ form_widget(task.completed) }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endapply %}
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-success" type="submit">{{ 'add'|trans }}</button>
+                <a href="{{ path('_admin_panel') }}" class="btn btn-warning">{{ 'cancel'|trans }}</a>
+            </div>
+        </div>
         {{ form_end(form) }}
     </form>
 {% endblock %}
 
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('build/training.js') }}"></script>
+{% endblock %}

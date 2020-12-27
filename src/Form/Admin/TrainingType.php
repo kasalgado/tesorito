@@ -7,6 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 
 class TrainingType extends AbstractType
 {
@@ -16,6 +17,11 @@ class TrainingType extends AbstractType
             ->add('dateAt', DateTimeType::class, [
                 'label' => 'date',
                 'translation_domain' => 'forms',
+            ])
+            ->add('trainingtasks', CollectionType::class, [
+                'entry_type' => TrainingTaskType::class,
+                'entry_options' => ['label' => false],
+                'allow_add' => true,
             ])
         ;
     }
