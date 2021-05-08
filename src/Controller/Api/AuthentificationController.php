@@ -3,7 +3,6 @@
 namespace App\Controller\Api;
 
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\Controller\AbstractFOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,7 +17,7 @@ class AuthentificationController extends AbstractFOSRestController
     /**
      * @Rest\Post("/user")
      */
-    public function getUser(Request $request): Response
+    public function getUser(Request $request)
     {
         $content = json_decode($request->getContent());
         $user = $this->getDoctrine()->getRepository(User::class)->findOneBy([

@@ -1,8 +1,8 @@
 {
     "type": "project",
     "license": "proprietary",
-    "name": "",
-    "description": "",
+    "name": "kasalgado/monitor",
+    "description": "Monitor App",
     "require": {
         "php": "^7.2.5",
         "ext-ctype": "*",
