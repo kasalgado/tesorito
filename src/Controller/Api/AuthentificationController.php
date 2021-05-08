@@ -17,7 +17,7 @@ class AuthentificationController extends AbstractFOSRestController
     /**
      * @Rest\Post("/user")
      */
-    public function getUser(Request $request)
+    public function verifyUserAction(Request $request)
     {
         $content = json_decode($request->getContent());
         $user = $this->getDoctrine()->getRepository(User::class)->findOneBy([
