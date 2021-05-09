@@ -26,10 +26,10 @@ class AuthentificationController extends AbstractFOSRestController
         ]);
         
         if ($user) {
-            $view = $this->view(json_encode(['status' => Response::HTTP_OK]), Response::HTTP_OK);
+            $view = $this->view(Response::HTTP_OK, Response::HTTP_OK);
             $logger->info('user found'.$user->getId());
         } else {
-            $view = $this->view(json_encode(['status' => Response::HTTP_NOT_FOUND]), Response::HTTP_NOT_FOUND);
+            $view = $this->view(Response::HTTP_NOT_FOUND, Response::HTTP_NOT_FOUND);
             $logger->info('user not found');
         }
 
