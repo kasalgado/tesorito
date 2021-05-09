@@ -7,6 +7,7 @@ use FOS\RestBundle\Controller\AbstractFOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use Symfony\Component\HttpFoundation\Request;
 use Psr\Log\LoggerInterface;
+use Symfony\Component\HttpFoundation\Response;
 
 use App\Entity\User;
 
@@ -20,17 +21,16 @@ class AuthentificationController extends AbstractFOSRestController
      */
     public function verifyUserAction(Request $request, LoggerInterface $logger)
     {
-        $logger->info('username: '.$request->get('username'));
-        
-        $content = json_decode($request->getContent());
         $user = $this->getDoctrine()->getRepository(User::class)->findOneBy([
-            'name' => $content->username,
+            'name' => $request->request->get('username'),
         ]);
         
         if ($user) {
-            $view = $this->view('success');
+            $view = $this->view(json_encode(['status' => Response::HTTP_OK]), Response::HTTP_OK);
+            $logger->info('user found'.$user->getId());
         } else {
-            $view = $this->view('failure');
+            $view = $this->view(json_encode(['status' => Response::HTTP_NOT_FOUND]), Response::HTTP_NOT_FOUND);
+            $logger->info('user not found');
         }
 
         return $this->handleView($view);
