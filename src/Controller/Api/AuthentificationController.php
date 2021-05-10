@@ -8,6 +8,7 @@ use FOS\RestBundle\Controller\Annotations as Rest;
 use Symfony\Component\HttpFoundation\Request;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 use App\Entity\User;
 
@@ -19,13 +20,17 @@ class AuthentificationController extends AbstractFOSRestController
     /**
      * @Rest\Post("/user")
      */
-    public function verifyUserAction(Request $request, LoggerInterface $logger)
+    public function verifyUserAction(
+            Request $request,
+            LoggerInterface $logger,
+            UserPasswordEncoderInterface $passwordEncoder
+    )
     {
         $user = $this->getDoctrine()->getRepository(User::class)->findOneBy([
-            'name' => $request->request->get('username'),
+            'email' => $request->request->get('email'),
         ]);
         
-        if ($user) {
+        if ($user && $passwordEncoder->isPasswordValid($user, $request->request->get('password'))) {
             $view = $this->view(Response::HTTP_OK, Response::HTTP_OK);
             $logger->info('user found'.$user->getId());
         } else {
