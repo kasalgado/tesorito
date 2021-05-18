@@ -24,5 +24,4 @@ yarn-error.log
 
 /.env
 /.env.test
-/.idea/
 /nbproject/
