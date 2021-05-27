@@ -4,6 +4,8 @@ fos_rest:
   #    allowed_methods_listener:  true
   #    routing_loader: true
   view:
+    #mime_types:
+        #json: ['application/json; charset=UTF-8', 'application/json']
     view_response_listener: 'force'
     formats:
       json: true
@@ -14,5 +16,5 @@ fos_rest:
   #            App\Exception\MyException: Forbidden area.
   format_listener:
     rules:
-      - { path: ^/api, prefer_extension: true, fallback_format: json, priorities: [ json, html ] }
-      - { path: ^/, prefer_extension: true, fallback_format: ~, priorities: [ 'html', '*/*'] }
+      - { path: ^/api, prefer_extension: true, fallback_format: json, priorities: [ json ] }
+      #- { path: ^/, prefer_extension: true, fallback_format: ~, priorities: [ 'html', '*/*'] }
