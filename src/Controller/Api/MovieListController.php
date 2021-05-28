@@ -15,14 +15,12 @@ class MovieListController extends AbstractFOSRestController
     /**
      * @Rest\Get("/movies")
      */
-    public function getListAction(): Response
+    public function getListAction()
     {
         $rootDir = $this->getParameter('kernel.project_dir');
         $content = file_get_contents($rootDir.'/data/movies.json');
+        $data = $this->view(json_decode($content, true));
         
-        $response = new Response();
-        $response->setContent($content);
-        
-        return $response;
+        return $this->handleView($data);
     }
 }
